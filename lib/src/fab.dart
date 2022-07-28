@@ -103,6 +103,7 @@ class ConvexButton extends StatelessWidget {
             color: backgroundColor ?? Colors.grey[50]!,
             sigma: sigma ?? _DEFAULT_SIGMA,
             leftPercent: const AlwaysStoppedAnimation<double>(0.5),
+            shadowColor: Color.fromARGB(130, 86, 187, 33),
           ),
         ),
       ),

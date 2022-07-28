@@ -1,12 +1,12 @@
 /*
  *  Copyright 2020 Chaobin Wu <chaobinwu89@gmail.com>
- *  
+ *
  *  Licensed under the Apache License, Version 2.0 (the "License");
  *  you may not use this file except in compliance with the License.
  *  You may obtain a copy of the License at
- *  
+ *
  *      http://www.apache.org/licenses/LICENSE-2.0
- *  
+ *
  *  Unless required by applicable law or agreed to in writing, software
  *  distributed under the License is distributed on an "AS IS" BASIS,
  *  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -42,6 +42,9 @@ class ConvexPainter extends CustomPainter {
   /// RLT support
   final TextDirection? textDirection;
 
+  /// Shadow color.
+  final Color shadowColor;
+
   /// Create painter
   ConvexPainter({
     required this.top,
@@ -50,7 +53,9 @@ class ConvexPainter extends CustomPainter {
     this.leftPercent = const AlwaysStoppedAnimation<double>(0.5),
     this.textDirection,
     Color color = Colors.white,
-    Color shadowColor = Colors.black38,
+    required this.shadowColor,
+
+    // Color shadowColor = Colors.black38,
     double sigma = 2,
     Gradient? gradient,
     double? cornerRadius,
